@@ -1,189 +1,62 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>新WORLD 建国ルール</title>
-
-<style>
-body {
-  margin: 0;
-  font-family: "Noto Sans JP", sans-serif;
-  background: #0f1115;
-  color: #ffffff;
-}
-
-
-.container {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  text-align: center;
-}
-
-h1 {
-  font-size: 1.6rem;
-  margin-bottom: 20px;
-}
-
-
-button {
-  background: #1e88e5;
-  color: #fff;
-  border: none;
-  padding: 14px 20px;
-  font-size: 1rem;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #1565c0;
-}
-
-
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.8);
-  z-index: 1000;
-}
-
-.modal-content {
-  background: #161a20;
-  margin: 5% auto;
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 900px;
-  width: 90%;
-  max-height: 85vh;
-  overflow-y: auto;
-  text-align: left;
-  line-height: 1.7;
-  font-size: 0.95rem;
-}
-
-.close {
-  text-align: right;
-  font-size: 1.2rem;
-  cursor: pointer;
-  color: #aaa;
-}
-
-.rule-title {
-  font-weight: bold;
-  margin: 20px 0 5px;
-  color: #90caf9;
-  font-size: 1.05rem;
-}
-
-.rule-text {
-  white-space: pre-wrap;
-}
-
-
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.3rem;
-  }
-  .modal-content {
-    font-size: 0.9rem;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>建国ルール</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<div class="container">
-  <h1>新WORLD サーバー</h1>
-  <button onclick="openModal()">📘 ルールを見る</button>
-</div>
 
+  <div class="container fade-in rules">
+    <h1>新WORLD建国ルール</h1>
 
-<div id="ruleModal" class="modal">
-  <div class="modal-content">
-    <div class="close" onclick="closeModal()">✖ 閉じる</div>
+    <pre>
+【全体共通ルール】
+・荒らし行為禁止（即BAN）
+・ルール違反禁止（即BAN）
+・バグを使った増殖禁止（即BAN）
+・領土侵入禁止（罰則あり）
+・国関連のオプ等には管理人必須
+禁止アイテム：
+・エリトラ
+・バンドル（全色）
 
-    <div class="rule-text">
-【新WORLD建国ルール】
-ーーーーーーーーーーーーーーーーーーー
-*全体共通ルール*
-・荒らし行為禁止　発覚次第BAN
-・ルール違反禁止　発覚次第BAN
-・バグを使ってアイテム増殖行為禁止
-発覚次第BAN
-・領土侵入行為禁止　発覚次第罰則あり
-・国関連のオプ等には管理人が必ず入る
-入れないという行為　発覚次第BAN
-ですので必ずそういうものを用意する場合は管理人をメンションして入って貰いましょう。
-禁止アイテム
-・エリトラ ・バンドル全色
-ーーーーーーーーーーーーーーーーーーー
-*国関連ルール*
-・建国する際は欲しい領土と国名と国カラーと国民と何主義かと国家体制と国旗と
-#建国 #国紹介 をノートに投稿しないと承認されません。
-・領土はサブトークの世界各国集結場で申請。
-・国民は最大6人まで。
-・領空240、領海50ブロック以内。
-・併合は1か国まで。
-・領土売買は最低ネザライト10個。
-・地図外禁止。報告者に報酬あり。
-・廃国後、再建国は1ヶ月後。
-ーーーーーーーーーーーーーーーーーーー
-*国のない地域*
-・プレイヤーがいれば殺害OK。
-・発展は禁止。
-ーーーーーーーーーーーーーーーーーーー
-*戦争関連ルール*
-・宣戦布告はノート＋本トーク。
-・建国2週間以内は拒否可。
-・ネザー侵攻禁止。
-・賠償制限なし。
-・軍事施設は各国最低1件。
-ーーーーーーーーーーーーーーーーーーー
-*戦時関連ルール*
-・攻撃側は軍事施設占領が条件。
-・防衛側は15分侵攻禁止。
-・同盟国参戦可能。
-ーーーーーーーーーーーーーーーーーーー
-*軍事的施設*
-・1件まで建設費無料。
-・管理人判断。
-ーーーーーーーーーーーーーーーーーーー
-*属国・植民地*
-・属国は4人まで。
-・植民地は勝戦国管理。
-ーーーーーーーーーーーーーーーーーーー
-*管理人建築ミッション*
-・建築で報酬あり。
-ーーーーーーーーーーーーーーーーーーー
-*完全平和主義国*
-・戦争不可。
-・国民8人。
-・軍事施設不可。
-ーーーーーーーーーーーーーーーーーーー
-*国家称号制度*
-・大国：同盟2
-・並国：同盟3＋条約1
-・小国：同盟3＋条約無制限
-ーーーーーーーーーーーーーーーーーーー
-*世界各国集結場*
-・国連的存在。
-・国家承認・国際法制定。
-ーーーーーーーーーーーーーーーーーーー
-随時更新有り、こまめに確認求
-    </div>
+【国関連ルール】
+・建国時は #建国 #国紹介 をノート投稿
+・国民は最大6人
+・領空240、領海50ブロック以内
+・併合は1か国まで
+・地図外禁止
+・廃国後、再建国まで1か月
+
+【戦争関連ルール】
+・宣戦布告はノートと本トークで
+・建国2週間未満は拒否可能
+・ネザー経由侵攻禁止
+・賠償制限なし（制限したい場合は国際会議）
+
+【完全平和主義国】
+・戦争なし
+・国民8人（元首除く）
+・軍事施設建設不可
+
+【国家称号制度】
+・大国／並国／小国
+・同盟・条約数に制限あり
+
+【世界各国集結場】
+・国家承認
+・国際法制定
+・国連的存在
+
+※随時更新あり
+    </pre>
+
+    <a href="index.html" class="back-button">
+      ← トップに戻る
+    </a>
   </div>
-</div>
 
-<script>
-function openModal() {
-  document.getElementById("ruleModal").style.display = "block";
-}
-function closeModal() {
-  document.getElementById("ruleModal").style.display = "none";
-}
-</script>
 </body>
 </html>
