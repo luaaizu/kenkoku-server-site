@@ -86,3 +86,26 @@ p {
     transform: translateY(0);
   }
 }
+
+
+@media (max-width: 600px) {
+
+  .container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .join-button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1.05em;
+  }
+}
